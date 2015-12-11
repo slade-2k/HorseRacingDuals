@@ -9,7 +9,15 @@ import java.math.*;
  * the standard input according to the problem statement.
  **/
 class Solution {
-    
+    public static void main(String args[]){
+    	Solution solution = new Solution();
+    	ArrayList<Integer> input = new ArrayList<Integer>();
+    	input.add(1);
+    	//input.add();
+    	
+    	System.out.println(solution.getClosestStrengths(input));
+    }
+	
     public int getClosestStrengths(ArrayList<Integer> input){
     	int lowestDifference = Integer.MAX_VALUE;
     	Collections.sort(input);
